@@ -1,5 +1,12 @@
 import random
-NumOfChar = 10
+while True:
+    NumOfChar = int(input("how long do you want password"))
+    if (NumOfChar > 1) & (NumOfChar < 30):
+        break
+    else:
+        print("enter a blah blah")
+
+
 password = ''
 while True:
     user_input = input("Would you like to create a random password? (y/n): ")
@@ -9,4 +16,4 @@ while True:
             password += chr(random_integer)
         print(password)
     else:
-        pass
+        break
